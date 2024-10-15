@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #011121;
+    color: white;
+    padding-top: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1.5%;
+}
+
+.nav-bar div{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-right {
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.nav-bar-left img{
+    width: 30px;
+    align-items: center;
+}
+
+.nav-bar-left p{
+    margin-top: 3px;
+}
+
+.nav-bar-left{
+    gap: 0.5rem;
+}
+
