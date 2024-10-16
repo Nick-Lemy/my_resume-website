@@ -17,30 +17,130 @@ header {
     background-color: #011121;
     color: white;
     padding-top: 1.5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 1.5%;
 }
 
-.nav-bar div{
+.nav-bar p {
+    font-size: 20px;
+}
+
+.nav-bar div {
     display: flex;
     flex-direction: row;
 }
 
 .nav-bar-right {
-    gap: 1.5rem;
+    gap: 3rem;
     justify-content: space-between;
 }
-.nav-bar-left img{
+
+.nav-bar-left img {
     width: 30px;
     align-items: center;
 }
 
-.nav-bar-left p{
+.nav-bar-left p {
     margin-top: 3px;
 }
 
-.nav-bar-left{
+.nav-bar-left {
     gap: 0.5rem;
 }
 
+
+.nav-bar-right p:hover {
+    color: orange;
+}
+
+
+.hero {
+    background-image: url('assets/bg.jpg');
+    /* background-repeat: no-repeat;
+    background-size:cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 5%;
+    display: flex;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    min-width: none;
+    gap: 2rem;
+    color: #20bbe0;
+    ;
+}
+
+span {
+    color: orange;
+}
+
+.hero-left h1 {
+    width: fit-content;
+    color: #20bbe0;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.hero-left p {
+    max-width: 470px;
+    font-size: 20px;
+}
+
+.hero-left button {
+    width: fit-content;
+}
+
+.hero-left h3 {
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.skills-certificates {
+    min-width: 1000px;
+    padding-top: 5%;
+    background-color: blueviolet;
+    margin-inline: auto;
+}
+
+.skills {
+    background-color: green;
+    display: flex;
+}
+
+.skills-images img {
+}
+
+.skills-images img:hover {
+    max-width: 120px;
+}
+
+.skills-images {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+.js {
+    width: 95px;
+    border-radius: 12px;
+}
+
+.html {
+    width: 125px;
+    border-radius: 22px;
+}
