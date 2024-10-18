@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Frutiger.ttf">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <title>Resume</title>
 </head>
-
 <body>
     <!-- Header -->
     <header>
@@ -65,18 +67,26 @@
             <div class="certificates">
                 <div class="certificates-title">
                     <h2>Certificates</h2>
-                    <img src="" alt="right arrow">
+                    <img src="assets/right-arrow.png" alt="right arrow">
                 </div>
                 <div class="certificates-slider">
-                    <img src="" alt="certificates">
+                        <img src="assets/foundation.jpeg" style="width:400px; height:310px;" id="image">
+                        <img src="assets/playitsafe.jpeg" style="width:400px; height:310px;" id="image">
+                        <img src="assets/duolingo.png" style="width:400px; height:310px;" id="image">
+
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
                 </div>
             </div>
-            <a href="#">More about me...</a>
+            <a href="#">
+                <h2>More about me...</h2>
+            </a>
         </div>
-        <div class="latest-project">
+        <div class="latest-projects">
             <h1>Latest Projects</h1>
             <div class="top-side">
-                <div>
+                <div class="foundation-cybersecurity">
+                    <img src="assets/foundation.jpeg" alt="">
                     <button>Show More</button>
                 </div>
                 <div>
@@ -102,14 +112,14 @@
                 <p>Contact</p>
             </div>
             <div class="social-media-links">
-                <img src="" alt="insta">
-                <img src="" alt="x">
-                <img src="" alt="linkedIn">
-                <img src="" alt="Github">
+                <img src="assets/instagram.png" alt="insta" class="icon">
+                <img src="assets/twitter.png" alt="x" class="icon">
+                <img src="assets/linkedin.png" alt="linkedIn" class="icon">
+                <img src="assets/github.png" alt="Github" class="icon">
             </div>
         </div>
-        <p>copyright © Nick-Lemy 2024</p>
+        <p>Copyright © Nick-Lemy K. 2024</p>
     </footer>
+    <script src="script.js" type="text/javascript"></script>
 </body>
-
 </html>

@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Balthazar-Regular';
+    /* Name your font family */
+    src: url('fonts/Frutiger.ttf');
+    /* Locate the .ttf file within your directory*/
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Balthazar-Regular', sans-serif;
 }
 
 /* Header */
@@ -74,7 +81,7 @@ header {
     margin: 10%;
     min-width: none;
     gap: 2rem;
-    color:#deebeb;
+    color: #deebeb;
     ;
 }
 
@@ -86,12 +93,12 @@ span {
     width: fit-content;
     font-weight: bolder;
     font-size: 70px;
-    line-height:0;
 }
 
 .hero-left p {
     font-weight: bold;
-    width: 470px;
+    width: auto;
+    line-height: 40px;
     font-size: 30px;
 }
 
@@ -104,30 +111,31 @@ span {
 main {
     display: flex;
     flex-direction: column;
-    background-color: #012d50;
 }
 
 .skills-certificates {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    margin-left: auto;
-    max-width: 1000px;
-    margin-right: auto;
+    align-items: center;
+    padding-bottom: 5%;
+    background-color: #012d50;
 }
 
-.skills {
+.skills,
+.certificates {
     display: flex;
-    justify-content: space-around;
-    background-color: gray;
-    padding: 5%;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10rem;
 }
 
-.skills-images img {
-    padding: 10px;
+.skills-images img,
+.certificates img {
+    padding: 20px;
 }
 
-.skills-certificates h1{
+.skills-certificates h1 {
     color: white;
 }
 
@@ -137,74 +145,229 @@ main {
     border-style: solid;
     border-color: aliceblue;
     border-width: 2px;
-    padding: 5%;
+    padding: 3%;
     border-radius: 5%;
+    min-width: 500px;
+    align-items: center;
 }
 
 .js {
-    width: 89.7px;
-    margin-left: 10px;
-    height: 100px;
+    width: 130px;
     border-radius: 12px;
 }
 
 .html {
-    width: 89.7px;
+    width: 118px;
 }
 
 .css {
-    width: 88.7px;
+    width: 118px;
 }
+
 .dart {
-    width: 88.7px; 
+    width: 118px;
 }
 
 .flutter {
-    width:  88.7px;
+    width: 118px;
 }
 
 .bash {
-    width: 88.7px;
-}
-.django {
-    width: 88.7px;
-}
-.python {
-    width: 88.7px;    
-}
-.git {
-    width: 88.7px;
+    width: 118px;
 }
 
-button {
+.django {
+    width: 118px;
+}
+
+.python {
+    width: 118px;
+}
+
+.git {
+    width: 118px;
+}
+
+.contact-btn {
     padding: 2% 3% 2% 3%;
     border-radius: 10px;
     border: 0;
     width: 130px;
     height: 43px;
-    background-color:#011121;
+    background-color: #011121;
     color: rgb(32, 29, 116);
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color:#1d2438;
+.contact-btn:hover {
+    background-color: #1d2438;
     color: white;
 }
 
-.skills-certificates h1{
+.skills-certificates h1,
+.latest-projects h1 {
+    color: white;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
-.skills-title {
+.skills-title,
+.certificates-title {
+    align-items: center;
     color: white;
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    gap: 5rem;
 }
 
-.skills-title img{
-    width: 30px
+.skills-title img,
+.certificates-title img {
+    width: 70px;
+    height: 45px;
+}
+
+.skills-title h2,
+.certificates-title h2 {
+    font-size: 30px;
+}
+
+.certificates {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 3%;
+}
+
+a {
+    color: #011121;
+    font-size: 16px;
+    font-family: 'Balthazar-Regular', sans-serif;
+}
+
+.latest-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #133c7a;
+}
+
+.top-side,
+.bottom-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-side div,
+.bottom-side div {
+    padding: 3%;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #012d50;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 2% 5%;
+    color: white;
+    background-color: #011121;
+    gap: 1rem;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 25px;
+}
+
+.quick-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+.foundation-cybersecurity {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+.foundation-cybersecurity img {
+    display: block;
+    width: 100%;
+}
+
+.foundation-cybersecurity button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.certificates-slider {
+    position: relative;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+    padding: 3%;
+    border-radius: 5%;
+    align-items: center;
+
+}
+
+.certificates-slider img{
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+.next {
+    right: 0;
 }
