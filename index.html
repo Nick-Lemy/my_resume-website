@@ -40,7 +40,7 @@
     <main>
         <!-- Skills & Certificates -->
         <div class="skills-certificates">
-            <h1>Skills & Certificates</h1>
+            <h1>Skills & <span>Certificates</span></h1>
             <div class="skills">
                 <div class="skills-images">
                     <div>
@@ -74,58 +74,85 @@
                             src="assets/foundation.jpeg" style="width: 380px; height:310px;" id="image"></a>
                     <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/YZTY6FNEVP2T"><img
                             src="assets/playitsafe.jpeg" style="width: 380px;; height:310px;" id="image"></a>
-                    <a target="_blank" href="https://certs.duolingo.com/ecf9cb81b87155d8b0eb72a1b43f76d2"><img src="assets/duolingo.png"
-                            style="width: 380px;; height:310px;" id="image"></a>
-                    <a target="_blank" href="https://academy.hackthebox.com/achievement/1131745/19"><img src="assets/nmap.png"
-                            class="nmap" style="width:380px; height:310px;"></a>
+                    <a target="_blank" href="https://certs.duolingo.com/ecf9cb81b87155d8b0eb72a1b43f76d2"><img
+                            src="assets/duolingo.png" style="width: 380px;; height:310px;" id="image"></a>
+                    <a target="_blank" href="https://academy.hackthebox.com/achievement/1131745/19"><img
+                            src="assets/nmap.png" class="nmap" style="width:380px; height:310px;"></a>
                     <button class="prev" onclick="prevSlide()">&#10094</button>
                     <button class="next" onclick="nextSlide()">&#10095</button>
                 </div>
             </div>
             <a href="#">
-                <h2>More about me...</h2>
+                <button class="contact-btn">ABOUT ME &#10095</button>
             </a>
+            <div class="social-media-links">
+                <img src="assets/instagram.png" alt="insta" class="icon">
+                <img src="assets/twitter.png" alt="x" class="icon">
+                <img src="assets/linkedin.png" alt="linkedIn" class="icon">
+                <img src="assets/github.png" alt="Github" class="icon">
+            </div>
         </div>
         <div class="latest-projects">
-            <h1>Latest Projects</h1>
+            <h1>Projects</h1>
             <div class="container">
                 <div class="card-wrapper">
                     <ul class="card-list">
                         <li class="card-item">
-                            <a href="#" class="card-link">
+                            <div class="card-link">
                                 <img src="assets/irrigateTech.png" alt="" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur 
+                                <a href="https://irrigatetech-nick-lemys-projects.vercel.app/" style="text-decoration: none;" target="_blank"><p class="badge">IrrigateTech</p></a>
+                                <h2 class="card-title"> Tech Irrigation Project home page website
                                 </h2>
-                                <button class="card-button">&#10095</button>
-                            </a>
+                                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                    <button onclick="location.href='https://irrigatetech-nick-lemys-projects.vercel.app/'" class="card-button">&#10095</button>
+                                    <a style="margin-top: 11%;" href="https://github.com/Nick-Lemy/irrigation-project-website.git" target="_blank"><img src="assets/github.png"
+                                            style="width: 30px; height: 30px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="card-item">
-                            <a href="#" class="card-link">
-                                <img src="assets/irrigateTech.png" alt="" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                            <div class="card-link">
+                                <!-- https://nick-smoky.vercel.app/ -->
+                                <img src="assets/card.png" alt="" class="card-image">
+                                <a href="https://nick-smoky.vercel.app/" style="text-decoration: none;" target="_blank"><p class="badge">Flutter Card</p></a>
+                                <h2 class="card-title">E-visit Card made with Dart using Flutter
                                 </h2>
-                                <button class="card-button">&#10095</button>
-                            </a>
+                                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                    <button onclick="location.href='https://nick-smoky.vercel.app/'" class="card-button">&#10095</button>
+                                    <a style="margin-top: 11%;" href="https://github.com/Nicklemy/mi_card_webversion" target="_blank"><img src="assets/github.png"
+                                            style="width: 30px; height: 30px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="card-item">
-                            <a href="#" class="card-link">
-                                <img src="assets/irrigateTech.png" alt="" class="card-image">
-                                <p class="badge">irrigateTech</p>
-                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                            <div class="card-link">
+                                <img src="assets/weather_app.png" alt="" class="card-image">
+                                <a href="./404.html" style="text-decoration: none;" target="_blank"><p class="badge">Weather Web App</p></a>
+                                <h2 class="card-title">Weather Web App using Django, HTML and CSS
                                 </h2>
-                                <button class="card-button">&#10095</button>
-                            </a>
+                                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                    <button onclick="location.href='./404.html'" class="card-button">&#10095</button>
+                                    <a style="margin-top: 11%;" href="https://github.com/Nick-Lemy/django-simple_weatherapp.git" target="_blank"><img src="assets/github.png"
+                                            style="width: 30px; height: 30px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                         <li class="card-item">
-                            <a href="#" class="card-link">
-                                <img src="assets/irrigateTech.png" alt="" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                            <div class="card-link">
+                                <img src="assets/resume.png" alt="" class="card-image">
+                                <a href="#" style="text-decoration: none;"><p class="badge">Resume website</p></a>
+                                <h2 class="card-title">My resume website using HTML, CSS and JavaScript
                                 </h2>
-                                <button class="card-button">&#10095</button>
-                            </a>
+                                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                                    <button onclick="location.href='#';" class="card-button">&#10095</button>
+                                    <a style="margin-top: 11%;" href="https://github.com/Nick-Lemy/my_resume-website.git" target="_blank"><img src="assets/github.png"
+                                            style="width: 30px; height: 30px; border-radius: 50%;">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

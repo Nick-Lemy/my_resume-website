@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(22, 22, 22);
+    background-color:  #011121;
     color: white;
     padding-top: 1.5%;
     padding-left: 10%;
@@ -72,8 +72,9 @@ header {
 
 
 .hero {
-    /* background-repeat: no-repeat;
-    background-size:cover; */
+    /* background-image: url('assets/bg.jpg');
+    background-repeat: no-repeat; */
+    background-size:cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -89,7 +90,7 @@ header {
     margin-top: 10%;
     max-width: 600px;
     gap: 2rem;
-    color: rgb(87, 87, 247);
+    color:#5372F0;
 }
 
 span {
@@ -125,7 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    background-color: rgb(242, 242, 242);
+    background-color:#011121;
     padding-bottom: 5%;
 }
 
@@ -155,29 +156,32 @@ main {
 }
 
 .hero-right {
-    border-radius: 30px;
+    border-radius: 50%;
     height: fit-content;
     padding: 2%;
-    background-color: white;
+    background-color: transparent;
     animation: smooth-appear 0.7s ease-in;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.hero-right img {
+    border-radius: 50%;
+}
+
 .skills-images {
-    display: grid;
+    display: flex;
     flex-direction: column;
-    border-style: solid;
     background-color: #fff;
-    ;
-    border-width: 2px;
-    padding: 5%;
+    border-width: 0;
+    padding: 7%;
+    max-width: 530px;
     border-top-left-radius: 30px;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 #5372f0c0, 0 6px 20px 0 #5372f0b6;
 }
 
 .js {
-    width: 100px;
+    width: 120px;
     border-radius: 30px;
 }
 
@@ -190,7 +194,7 @@ main {
 .css,
 .html,
 .nmap {
-    width: 88px;
+    width: 108px;
 }
 
 .certificates-slider img:hover {
@@ -198,14 +202,14 @@ main {
 }
 
 .contact-btn {
-    padding: 2% 3% 2% 3%;
+    padding: 1%;
     border-radius: 10px;
     border: 0;
-    width: 130px;
-    height: 43px;
-    border: 3px solid blue;
-    background-color: white;
-    color: blue;
+    width: 150px;
+    height: 50px;
+    border: 3px solid orange;
+    background-color: transparent;
+    color: orange;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
@@ -228,12 +232,21 @@ main {
     transform: scale(1.3);
 }
 
-.skills-certificates h1,
-.latest-projects h1 {
+.skills-certificates h1{
     font-size: 50px;
-    color: rgb(0, 0, 0);
+    color:#5372F0;
     text-align: center;
     margin-bottom: 70px;
+}
+
+.latest-projects h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.skills-certificates span{
+    color: orange;
 }
 
 .skills-title,
@@ -251,11 +264,16 @@ main {
     height: 45px;
 }
 
-.skills-title h2,
+.skills-title h2
+{
+    font-size: 30px;
+
+    color:#5372F0;
+}
 .certificates-title h2 {
     font-size: 30px;
 
-    color: black;
+    color: orange;
 }
 
 .certificates {
@@ -276,21 +294,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 5%;
-}
-
-.top-side,
-.bottom-side {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.top-side div,
-.bottom-side div {
-    padding: 3%;
-    margin: 20px;
-    border-radius: 15px;
-    background-color: #012d50;
+    padding-bottom: 10%;
+    background-color:orange;
 }
 
 footer {
@@ -321,59 +326,46 @@ footer {
     display: flex;
     gap: 2rem;
     font-size: 20px;
+    
+    padding: 3%;
 }
 
 .social-media-links {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 1.2rem;
+    padding: 3%;
+    justify-content: center;
+    
+}
+
+.social-media-links img:hover {
+    transform: translateY(-10px);
+    scale: 1.1;
+}
+
+.social-media-links img {
+    width: 50px;
+    transition: all 0.3s;
 }
 
 footer p {
     text-align: center;
 }
 
-.foundation-cybersecurity {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    align-items: center;
-}
-
-.foundation-cybersecurity img {
-    display: block;
-    width: 100%;
-}
-
-.foundation-cybersecurity button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
 
 .certificates-slider {
     position: relative;
-    border-style: solid;
-    border-color: black;
     align-items: center;
     display: grid;
     flex-direction: column;
     border-style: solid;
     background-color: #fff;
-    ;
-    border-width: 2px;
+    border-width: 0;
     padding: 5%;
-    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(255, 166, 0, 0.742), 0 6px 20px 0 rgba(255, 166, 0, 0.715);
 
 }
 
@@ -449,7 +441,7 @@ img.displaySlide {
     }
 }
 
-span {
+#demo {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
@@ -473,9 +465,12 @@ span {
     }
 }
 
-
+.card-item:hover { 
+    transform: translateY(-10px);
+}
 .card-list .card-item{
     list-style: none;
+    transition: all 0.3s ease;
 }
 
 .card-list .card-item .card-link {
@@ -484,10 +479,10 @@ span {
     background: white;
     padding: 18px;
     border-radius: 12px;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-list .card-item .card-link:hover {
@@ -502,7 +497,7 @@ span {
 }
 
 .card-list .card-link .badge {
-    color: #2b54f9;
+    color: white;
     padding: 8px 16px;
     font-size: 0.95rem;
     font-weight: 500;
@@ -517,7 +512,9 @@ span {
     font-weight: 600;
     color: #000000;
 }
-
+.card-button{
+    cursor: pointer;
+}
 .card-list .card-link .card-button {
     height: 30px;
     width: 30px;
@@ -536,7 +533,13 @@ span {
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: auto;
+    max-width: 1500px;
+    margin-inline: auto;
+}
+
+.card-image {
+    align-items: center;
 }
