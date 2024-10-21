@@ -1,13 +1,14 @@
 @font-face {
     font-family: 'Balthazar-Regular';
     /* Name your font family */
-    src: url('fonts/Frutiger.ttf');
+    src: url('fonts/static/SourceCodePro-Medium.ttf');
     /* Locate the .ttf file within your directory*/
 }
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Balthazar-Regular', sans-serif;
 }
 
@@ -22,12 +23,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #011121;
+    background-color: rgb(22, 22, 22);
     color: white;
     padding-top: 1.5%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1.5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-bar p {
@@ -42,6 +44,11 @@ header {
 .nav-bar-right {
     gap: 3rem;
     justify-content: space-between;
+}
+
+.nav-bar-right p {
+    font-size: 20px;
+    letter-spacing: 0.01px;
 }
 
 .nav-bar-left img {
@@ -59,12 +66,12 @@ header {
 
 
 .nav-bar-right p:hover {
-    color: orange;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 
 .hero {
-    background-image: url('assets/bg.jpg');
     /* background-repeat: no-repeat;
     background-size:cover; */
     background-repeat: no-repeat;
@@ -73,16 +80,16 @@ header {
     background-position: center;
     padding: 5%;
     display: flex;
+    justify-content: space-between;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
-    margin: 10%;
-    min-width: none;
+    margin-top: 10%;
+    max-width: 600px;
     gap: 2rem;
-    color: #deebeb;
-    ;
+    color: rgb(87, 87, 247);
 }
 
 span {
@@ -92,20 +99,21 @@ span {
 .hero-left h1 {
     width: fit-content;
     font-weight: bolder;
-    font-size: 70px;
+    font-size: 40px;
+    line-height: 0;
 }
 
 .hero-left p {
     font-weight: bold;
-    width: auto;
-    line-height: 40px;
     font-size: 30px;
+
 }
 
 
 .hero-left h3 {
-    font-size: 35px;
-
+    font-size: 200%;
+    margin-top: 5%;
+    line-height: 0;
 }
 
 main {
@@ -117,75 +125,76 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    align-items: center;
+    background-color: rgb(242, 242, 242);
     padding-bottom: 5%;
-    background-color: #012d50;
 }
 
 .skills,
 .certificates {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 3%;
     gap: 10rem;
 }
 
 .skills-images img,
 .certificates img {
-    padding: 20px;
+    padding: 12px;
+    cursor: pointer;
 }
 
-.skills-certificates h1 {
-    color: white;
+.skills-images div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-right {
+    border-radius: 30px;
+    height: fit-content;
+    padding: 2%;
+    background-color: white;
+    animation: smooth-appear 0.7s ease-in;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skills-images {
-    display: flex;
+    display: grid;
     flex-direction: column;
     border-style: solid;
-    border-color: aliceblue;
+    background-color: #fff;
+    ;
     border-width: 2px;
-    padding: 3%;
-    border-radius: 5%;
-    min-width: 500px;
+    padding: 5%;
+    border-top-left-radius: 30px;
     align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .js {
-    width: 130px;
-    border-radius: 12px;
+    width: 100px;
+    border-radius: 30px;
 }
 
-.html {
-    width: 118px;
+.python,
+.git,
+.django,
+.bash,
+.flutter,
+.dart,
+.css,
+.html,
+.nmap {
+    width: 88px;
 }
 
-.css {
-    width: 118px;
-}
-
-.dart {
-    width: 118px;
-}
-
-.flutter {
-    width: 118px;
-}
-
-.bash {
-    width: 118px;
-}
-
-.django {
-    width: 118px;
-}
-
-.python {
-    width: 118px;
-}
-
-.git {
-    width: 118px;
+.certificates-slider img:hover {
+    scale: 1.1;
 }
 
 .contact-btn {
@@ -194,21 +203,35 @@ main {
     border: 0;
     width: 130px;
     height: 43px;
-    background-color: #011121;
-    color: rgb(32, 29, 116);
+    border: 3px solid blue;
+    background-color: white;
+    color: blue;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .contact-btn:hover {
-    background-color: #1d2438;
+    background-color: orange;
     color: white;
+    transform: translateY(-10px);
+
+}
+
+.skills-images img {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    ;
+}
+
+.skills-images img:hover {
+    transform: scale(1.3);
 }
 
 .skills-certificates h1,
 .latest-projects h1 {
-    color: white;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-bottom: 70px;
 }
@@ -219,7 +242,7 @@ main {
     color: white;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .skills-title img,
@@ -231,6 +254,8 @@ main {
 .skills-title h2,
 .certificates-title h2 {
     font-size: 30px;
+
+    color: black;
 }
 
 .certificates {
@@ -240,17 +265,17 @@ main {
     padding: 3%;
 }
 
-a {
-    color: #011121;
+.skills-certificates a {
+    color: #000000;
     font-size: 16px;
-    font-family: 'Balthazar-Regular', sans-serif;
+    text-align: center;
+    text-decoration: none;
 }
 
 .latest-projects {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    background-color: #133c7a;
 }
 
 .top-side,
@@ -337,23 +362,33 @@ footer p {
 .certificates-slider {
     position: relative;
     border-style: solid;
-    border-color: aliceblue;
-    border-width: 2px;
-    padding: 3%;
-    border-radius: 5%;
+    border-color: black;
     align-items: center;
+    display: grid;
+    flex-direction: column;
+    border-style: solid;
+    background-color: #fff;
+    ;
+    border-width: 2px;
+    padding: 5%;
+    border-top-right-radius: 30px;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.certificates-slider img{
+.certificates-slider img {
     display: none;
+    transition: all 0.3s;
 }
 
-img.displaySlide{
+img.displaySlide {
     display: block;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -365,9 +400,144 @@ img.displaySlide{
     cursor: pointer;
 }
 
-.prev{
+.prev {
     left: 0;
 }
+
 .next {
     right: 0;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* Element is invisible at the start */
+    }
+
+    100% {
+        opacity: 1;
+        /* Element is fully visible at the end */
+    }
+}
+
+
+.certificates-slider {
+    animation: fadeIn 2.1s ease-in-out;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+span {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes smooth-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    width: 300px;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #2b54f9;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background-color:#5372F0;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.card-list .card-link .card-button {
+    height: 30px;
+    width: 30px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    border: 2px solid #5372F0;
+    transition: 0.3s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: white;
+    background-color: #5372F0;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-inline: auto;
 }

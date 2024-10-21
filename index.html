@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts/Frutiger.ttf">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    
     <title>Resume</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -27,7 +27,7 @@
         <div class="hero">
             <div class="hero-left">
                 <h1>I'm Nick-Lemy,</h1>
-                <h3>a <span>Software Engineering Student</span></h3>
+                <h3>a <span id="demo"></span></h3>
                 <p>I’m always eager to connect with like-minded professionals and explore opportunities to grow in
                     Cybersecurity, Software Engineering and Web Development.</p>
                 <button class="contact-btn">CONTACT</button>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="skills-title">
                     <img src="assets/left-arrow.png" alt="left arrow">
-                    <h2>skills</h2>
+                    <h2>Skills</h2>
                 </div>
             </div>
             <div class="certificates">
@@ -70,10 +70,14 @@
                     <img src="assets/right-arrow.png" alt="right arrow">
                 </div>
                 <div class="certificates-slider">
-                        <img src="assets/foundation.jpeg" style="width:400px; height:310px;" id="image">
-                        <img src="assets/playitsafe.jpeg" style="width:400px; height:310px;" id="image">
-                        <img src="assets/duolingo.png" style="width:400px; height:310px;" id="image">
-
+                    <a href="https://www.coursera.org/account/accomplishments/verify/K2ZBEEDSQG7B" target="_blank"><img
+                            src="assets/foundation.jpeg" style="width: 380px; height:310px;" id="image"></a>
+                    <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/YZTY6FNEVP2T"><img
+                            src="assets/playitsafe.jpeg" style="width: 380px;; height:310px;" id="image"></a>
+                    <a target="_blank" href="https://certs.duolingo.com/ecf9cb81b87155d8b0eb72a1b43f76d2"><img src="assets/duolingo.png"
+                            style="width: 380px;; height:310px;" id="image"></a>
+                    <a target="_blank" href="https://academy.hackthebox.com/achievement/1131745/19"><img src="assets/nmap.png"
+                            class="nmap" style="width:380px; height:310px;"></a>
                     <button class="prev" onclick="prevSlide()">&#10094</button>
                     <button class="next" onclick="nextSlide()">&#10095</button>
                 </div>
@@ -84,25 +88,51 @@
         </div>
         <div class="latest-projects">
             <h1>Latest Projects</h1>
-            <div class="top-side">
-                <div class="foundation-cybersecurity">
-                    <img src="assets/foundation.jpeg" alt="">
-                    <button>Show More</button>
-                </div>
-                <div>
-                    <button>Show More</button>
-                </div>
-            </div>
-            <div class="bottom-side">
-                <div>
-                    <button>Show More</button>
-                </div>
-                <div>
-                    <button>Show More</button>
+            <div class="container">
+                <div class="card-wrapper">
+                    <ul class="card-list">
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <img src="assets/irrigateTech.png" alt="" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur 
+                                </h2>
+                                <button class="card-button">&#10095</button>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <img src="assets/irrigateTech.png" alt="" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                                </h2>
+                                <button class="card-button">&#10095</button>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <img src="assets/irrigateTech.png" alt="" class="card-image">
+                                <p class="badge">irrigateTech</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                                </h2>
+                                <button class="card-button">&#10095</button>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <img src="assets/irrigateTech.png" alt="" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet consectetur
+                                </h2>
+                                <button class="card-button">&#10095</button>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-top">
             <div class="quick-links">
@@ -122,4 +152,5 @@
     </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
