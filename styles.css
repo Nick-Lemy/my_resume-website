@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:  #011121;
+    background-color: #011121;
     color: white;
     padding-top: 1.5%;
     padding-left: 10%;
@@ -74,7 +74,7 @@ header {
 .hero {
     /* background-image: url('assets/bg.jpg');
     background-repeat: no-repeat; */
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -90,7 +90,7 @@ header {
     margin-top: 10%;
     max-width: 600px;
     gap: 2rem;
-    color:#5372F0;
+    color: #5372F0;
 }
 
 span {
@@ -126,7 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    background-color:#011121;
+    background-color: #011121;
     padding-bottom: 5%;
 }
 
@@ -232,9 +232,9 @@ main {
     transform: scale(1.3);
 }
 
-.skills-certificates h1{
+.skills-certificates h1 {
     font-size: 50px;
-    color:#5372F0;
+    color: #5372F0;
     text-align: center;
     margin-bottom: 70px;
 }
@@ -245,7 +245,8 @@ main {
     text-align: center;
     margin-bottom: 70px;
 }
-.skills-certificates span{
+
+.skills-certificates span {
     color: orange;
 }
 
@@ -264,12 +265,12 @@ main {
     height: 45px;
 }
 
-.skills-title h2
-{
+.skills-title h2 {
     font-size: 30px;
 
-    color:#5372F0;
+    color: #5372F0;
 }
+
 .certificates-title h2 {
     font-size: 30px;
 
@@ -295,7 +296,7 @@ main {
     flex-direction: column;
     padding: 5%;
     padding-bottom: 10%;
-    background-color:orange;
+    background-color: orange;
 }
 
 footer {
@@ -326,7 +327,7 @@ footer {
     display: flex;
     gap: 2rem;
     font-size: 20px;
-    
+
     padding: 3%;
 }
 
@@ -336,7 +337,7 @@ footer {
     gap: 1.2rem;
     padding: 3%;
     justify-content: center;
-    
+
 }
 
 .social-media-links img:hover {
@@ -465,10 +466,11 @@ img.displaySlide {
     }
 }
 
-.card-item:hover { 
+.card-item:hover {
     transform: translateY(-10px);
 }
-.card-list .card-item{
+
+.card-list .card-item {
     list-style: none;
     transition: all 0.3s ease;
 }
@@ -502,7 +504,7 @@ img.displaySlide {
     font-size: 0.95rem;
     font-weight: 500;
     margin: 16px 0 18px;
-    background-color:#5372F0;
+    background-color: #5372F0;
     width: fit-content;
     border-radius: 50px;
 }
@@ -512,9 +514,11 @@ img.displaySlide {
     font-weight: 600;
     color: #000000;
 }
-.card-button{
+
+.card-button {
     cursor: pointer;
 }
+
 .card-list .card-link .card-button {
     height: 30px;
     width: 30px;
