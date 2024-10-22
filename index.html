@@ -18,11 +18,13 @@
                 <img src="assets/kali.png" alt="logo">
                 <p>Nick's Portfolio</p>
             </div>
-            <div class="nav-bar-right">
-                <p>About</p>
-                <p>Project</p>
-                <p>Contact</p>
-            </div>
+            <nav class="nav-bar-right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="hero">
             <div class="hero-left">
@@ -201,7 +203,28 @@
         </div>
         <div class="contact">
             <h1>Contact</h1>
-            <div class="contact-form">
+            <div class="contact-container">
+                <div class="contact-form" style="display: flex; flex-direction: column;">
+                    <h3>Send me a message</h3>
+                    <form action="#" method="post"></form>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        
+                        <button type="submit" class="contact-me">SEND</button>
+                    </form>
+                </div>
+                <div class="location-contact">
+                    <div class="location">
+                        <h2>Location</h2>
+                        <p>Yaounde, Cameroon</p>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Contact Info</h2>
+                        <p>Email: nicklemykayiranga@gmail.com</p>
+                        <p>Phone: +250 793 246 060</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
