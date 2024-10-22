@@ -48,7 +48,7 @@ header {
 
 .nav-bar-right p {
     font-size: 20px;
-    letter-spacing: 0.01px;
+    letter-spacing: 0;
 }
 
 .nav-bar-left img {
@@ -58,6 +58,7 @@ header {
 
 .nav-bar-left p {
     margin-top: 3px;
+    font-weight: 500;
 }
 
 .nav-bar-left {
@@ -112,7 +113,7 @@ span {
 
 
 .hero-left h3 {
-    font-size: 200%;
+    font-size: 25px;
     margin-top: 5%;
     line-height: 0;
 }
@@ -548,6 +549,49 @@ img.displaySlide {
     align-items: center;
 }
 
+.education-experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color:#5372F0;
+    color: white;
+}
+
+.education-experience h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.experience h2{
+    color: orange;
+}
+
+.education-experience-container h2 {
+    font-size: 30px;
+}
+.education-experience-container p {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.education-experience-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-experience-container img {
+    width: auto;
+}
+
+.education-experience-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
 
 /* Media Queries for responsiveness */
 
