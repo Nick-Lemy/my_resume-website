@@ -95,6 +95,10 @@ function menuDisplayed() {
     } else {
         menu.style.display = "none";
     }
+    if(hamburger.style.display == 'none'){
+        isDispled = true;
+    }
+    
 }
 
 hamburger.addEventListener("click", () => {
@@ -102,6 +106,5 @@ hamburger.addEventListener("click", () => {
     menuDisplayed();
 });
 
-while(hamburger.style.display == 'none'){
-    isDispled = true;
-}
+
+document.addEventListener("DOMContentLoaded", menuDisplayed)

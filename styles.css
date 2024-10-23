@@ -212,6 +212,21 @@ main {
     scale: 1.1;
 }
 
+.certificates-slider img {
+    width: 380px; 
+    height:310px;
+}
+
+.alu {
+    height: 120px; 
+    margin: 8% 0 8%;
+}
+
+.wiyoshop {
+    height: 130px;
+    margin: 5% 0 5%;
+}
+
 .contact-btn {
     padding: 1%;
     border-radius: 10px;
@@ -837,13 +852,12 @@ header {
     }
 
     .education-experience h1{
-        font-size: 40px;
-        font-weight: bold;
+        font-size: 35px;
         padding: 0;
     }
 
     .latest-projects h1 { 
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .education {
@@ -856,7 +870,7 @@ header {
     }
 
     .skills-certificates h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .contact h1{
@@ -873,17 +887,16 @@ header {
     }
 
     .hero-left h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .hero-left p{
-        font-size: 20px;
-        max-width: 400px;
-        text-align: center;
+        font-size: 19px;
+        max-width: 380px;
     }
 
     .hero-left h3{
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -919,5 +932,24 @@ header {
 
     .nav-bar {
         padding: 20px;
+    }
+}
+
+@media screen and (max-width : 440px) {
+    .skills-images, .certificates-slider{
+        width: 320px;
+    }
+
+    .certificates-slider a>img {
+        width: 300px;
+        height: 290px;
+    }
+
+    .skills-images img{
+        width: 92px;
+    }
+
+    .hero-right img,  .alu, .wiyoshop{
+        width: 300px;
     }
 }
