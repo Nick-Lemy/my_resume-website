@@ -43,7 +43,6 @@ header {
 
 .nav-bar-right {
     gap: 3rem;
-    justify-content: space-between;
 }
 .nav-bar-right ul{
     display: flex;
@@ -51,6 +50,10 @@ header {
     
     list-style-type: none;
     gap: 2rem;
+}
+
+.hamburger {
+    display: none;
 }
 
 .nav-bar-right ul a{
@@ -100,6 +103,7 @@ header {
     max-width: 600px;
     gap: 2rem;
     color: #5372F0;
+    text-align: left;
 }
 
 span {
@@ -110,7 +114,6 @@ span {
     width: fit-content;
     font-weight: bolder;
     font-size: 40px;
-    line-height: 0;
 }
 
 .hero-left p {
@@ -123,7 +126,6 @@ span {
 .hero-left h3 {
     font-size: 25px;
     margin-top: 5%;
-    line-height: 0;
 }
 
 main {
@@ -585,9 +587,6 @@ img.displaySlide {
     color: orange;
 }
 
-.education-experience-container h2 {
-    font-size: 30px;
-}
 .education-experience-container p {
     font-size: 20px;
     max-width: 500px;
@@ -827,5 +826,94 @@ header {
 
     .education-experience-container {
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .education-experience-container{
+        flex-direction: column;
+        margin-inline: auto;
+        align-items: center;
+    }
+
+    .education-experience h1{
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .latest-projects h1 { 
+        font-size: 40px;
+    }
+
+    .education {
+        margin-bottom: 20px;
+    }
+
+    .experience {
+        align-items: center;
+        text-align:justify;
+    }
+
+    .skills-certificates h1{
+        font-size: 40px;
+    }
+
+    .contact h1{
+        font-size: 40px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-right img{
+        max-width: 400px;
+    }
+
+    .hero-left h1{
+        font-size: 30px;
+    }
+
+    .hero-left p{
+        font-size: 20px;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .hero-left h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 748px){
+    .footer-top{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .quick-links{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-bar-left p{
+        font-size: 15px;
+    }
+
+    .nav-bar-right ul{
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-bar-left img{
+        height: 25px;
     }
 }

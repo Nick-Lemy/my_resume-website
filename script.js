@@ -11,6 +11,10 @@ const slides = document.querySelectorAll(".certificates-slider img");
 let index = 0;
 let intervalId = null;
 var i = 0;
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".nav-bar-right ul");
+var isDispled = false;
+
 
 // Function to handle the typing animation of titles
 function total() {
@@ -81,3 +85,19 @@ function nextSlide() {
     index++;
     showSlide(index); // Show the next slide
 }
+
+
+// Function to handle hamburger menu
+
+function menuDisplayed() {
+    if(isDispled){
+        menu.style.display = "flex";
+    } else {
+        menu.style.display = "none";
+    }
+}
+
+hamburger.addEventListener("click", () => {
+    isDispled = !isDispled;
+    menuDisplayed();
+});
