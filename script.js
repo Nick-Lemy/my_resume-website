@@ -101,3 +101,7 @@ hamburger.addEventListener("click", () => {
     isDispled = !isDispled;
     menuDisplayed();
 });
+
+while(hamburger.style.display == 'none'){
+    isDispled = true;
+}

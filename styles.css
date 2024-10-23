@@ -25,10 +25,10 @@ header {
     justify-content: space-between;
     background-color: #011121;
     color: white;
-    padding-top: 1.5%;
+    padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 1.5%;
+    padding-bottom: 50px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -899,21 +899,25 @@ header {
 
     .hamburger {
         display: block;
-        text-align: center;
+        text-align: right;
     }
 
     .nav-bar-left p{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .nav-bar-right ul{
         display: none;
         flex-direction: column;
         margin-top: 20px;
-        text-align: center;
+        text-align: right;
     }
 
     .nav-bar-left img{
         height: 25px;
+    }
+
+    .nav-bar {
+        padding: 20px;
     }
 }
