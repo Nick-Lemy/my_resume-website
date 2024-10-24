@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Balthazar-Regular';
+    font-family: 'Robot-stab';
     /* Name your font family */
-    src: url('fonts/static/SourceCodePro-Medium.ttf');
+    src: url('fonts/RobotoSlab-VariableFont_wght.ttf');
     /* Locate the .ttf file within your directory*/
 }
 
@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Balthazar-Regular', sans-serif;
+    font-family: 'Robot-stab', sans-serif;
 }
 
 /* Header */
@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     background-color: #011121;
     color: white;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 50px;
@@ -44,7 +44,7 @@ header {
 .nav-bar-right {
     gap: 3rem;
 }
-.nav-bar-right ul{
+.nav-bar-right ul, .quick-links ul{
     display: flex;
     flex-direction: row;
     
@@ -56,7 +56,7 @@ header {
     display: none;
 }
 
-.nav-bar-right ul a{
+.nav-bar-right ul a, .quick-links ul a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -77,9 +77,10 @@ header {
 }
 
 
-.nav-bar-right p:hover {
-    font-size: 22px;
-    font-weight: bolder;
+.nav-bar-right a:hover, .quick-links a:hover {
+    color:#5372F0;
+    border-bottom: 3px solid #5372F0;
+    padding-bottom: 5px;
 }
 
 
@@ -228,6 +229,7 @@ main {
 }
 
 .contact-btn {
+    margin-top: 10px;
     padding: 1%;
     border-radius: 10px;
     border: 0;
@@ -364,13 +366,20 @@ footer {
     padding: 3%;
 }
 
-.social-media-links {
+.social-media-links{
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
     padding: 3%;
     justify-content: center;
 
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 3%;
 }
 
 .social-media-links img:hover {
@@ -588,7 +597,7 @@ img.displaySlide {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
-    background-color:#5372F0;
+    background-color:#011121;
     color: white;
 }
 
@@ -619,7 +628,8 @@ img.displaySlide {
 .education-experience-container h3 {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color:darkblue;
+    text-align: center;
 }
 
 .contact {
@@ -628,13 +638,14 @@ img.displaySlide {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: white;
-    color: orange;
+    color:#5372F0;
 }
 
 .contact h1 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
+    color:#011121;
 }
 
 .contact-form {
@@ -666,6 +677,7 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color:#5372F0;
 }
 
 .location-contact {
@@ -680,127 +692,18 @@ textarea {
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-@font-face {
-    font-family: 'Balthazar-Regular';
-    src: url('fonts/static/SourceCodePro-Medium.ttf');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Balthazar-Regular', sans-serif;
-}
-
-/* Header */
-header {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-}
-
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #011121;
+.location-contact h2 {
     color: white;
-    padding: 1.5% 10%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
-.nav-bar p {
-    font-size: 20px;
+.links img {
+    width: 35px;
+    transition: all 0.3s;
 }
 
-.nav-bar div {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-bar-right {
-    gap: 3rem;
-    justify-content: space-between;
-}
-
-.nav-bar-right ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 2rem;
-}
-
-.nav-bar-right ul a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.nav-bar-left img {
-    width: 30px;
-    align-items: center;
-}
-
-.nav-bar-left p {
-    margin-top: 3px;
-    font-weight: 500;
-}
-
-.nav-bar-left {
-    gap: 0.5rem;
-}
-
-.nav-bar-right p:hover {
-    font-size: 22px;
-    font-weight: bolder;
-}
-
-/* Hero Section */
-.hero {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-left {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    max-width: 600px;
-    gap: 2rem;
-    color: #5372F0;
-}
-
-.hero-left h1 {
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 0;
-}
-
-.hero-left p {
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.hero-left h3 {
-    font-size: 25px;
-    margin-top: 5%;
-}
-
-.hero-right {
-    border-radius: 50%;
-    height: fit-content;
-    padding: 2%;
-    background-color: transparent;
-    animation: smooth-appear 0.7s ease-in;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-
-.hero-right img {
-    border-radius: 50%;
+.links img:hover {
+    transform: translateY(-10px);
+    scale: 1.1;
 }
 
 /* Media Queries */
@@ -949,7 +852,12 @@ header {
         width: 92px;
     }
 
-    .hero-right img,  .alu, .wiyoshop{
+    .hero-right img{
         width: 300px;
+    }
+
+    .alu, .wiyoshop{
+        width: 200px;
+        height: 100px;
     }
 }

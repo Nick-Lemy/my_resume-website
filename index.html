@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts/Frutiger.ttf">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>Resume</title>
 </head>
 
@@ -21,20 +19,21 @@
             <nav class="nav-bar-right">
                 <p class="hamburger">☰</p>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#projects">Skills-Certificates</a></li>
+                    <li><a href="#education-experience">Education-Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-               
+
             </nav>
         </div>
-        <div class="hero">
+        <div class="hero" id="hero">
             <div class="hero-left">
                 <h1>I'm Nick-Lemy,</h1>
                 <h3>a <span id="demo"></span></h3>
                 <p>I’m always eager to connect with like-minded professionals and explore opportunities to grow in
                     Cybersecurity, Software Engineering and Web Development.</p>
-                <button class="contact-btn">CONTACT</button>
+                <button onclick="location.href='assets/cv.pdf'" class="contact-btn">Download CV</button>
             </div>
             <div class="hero-right">
                 <img src="assets/me.png" alt="">
@@ -43,7 +42,7 @@
     </header>
     <main>
         <!-- Skills & Certificates -->
-        <div class="skills-certificates">
+        <section class="skills-certificates" id="skills-certificates">
             <h1>Skills & <span>Certificates</span></h1>
             <div class="skills">
                 <div class="skills-images">
@@ -95,8 +94,8 @@
                 <img src="assets/linkedin.png" alt="linkedIn" class="icon">
                 <img src="assets/github.png" alt="Github" class="icon">
             </div>
-        </div>
-        <div class="latest-projects">
+        </section>
+        <section class="latest-projects" id="projects">
             <h1>Projects</h1>
             <div class="container">
                 <div class="card-wrapper">
@@ -108,7 +107,7 @@
                                     style="text-decoration: none;" target="_blank">
                                     <p class="badge">IrrigateTech</p>
                                 </a>
-                                <h2 class="card-title"> Tech Irrigation Project home page website
+                                <h2 class="card-title">Welcome page website for a Tech Irrigation Project
                                 </h2>
                                 <div style="display: flex; flex-direction: row; justify-content: space-between;">
                                     <button
@@ -180,8 +179,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="education-experience">
+        </section>
+        <section class="education-experience" id="education-experience">
             <h1>Education & <span>Experience</span></h1>
             <div class="education-experience-container">
                 <div class="education">
@@ -201,46 +200,54 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contact">
+        </section>
+        <section class="contact" id="contact">
             <h1>Contact</h1>
             <div class="contact-container">
                 <div class="contact-form" style="display: flex; flex-direction: column;">
-                    <h3>Send me a message</h3>
+                    <h2>Message</h2>
                     <form action="#" method="post"></form>
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        
-                        <button type="submit" class="contact-me">SEND</button>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <button type="submit" class="contact-me">SEND</button>
                     </form>
                 </div>
                 <div class="location-contact">
                     <div class="location">
                         <h2>Location</h2>
+                        <br>
                         <p>Kigali, Rwanda</p>
                     </div>
                     <div class="contact-info">
-                        <h2>Contact Info</h2>
+                        <h2>Contact info</h2>
+                        <br>
                         <p>Email: nicklemykayiranga@gmail.com</p>
-                        <p>Phone: +250 793 246 060</p>
+                        <br>
+                        <p>Phone: +250 793 246 060 / +242 05 337 3074</p>
                     </div>
-                    <div class="social-media">
-
+                    <div class="links">
+                        <a href="https://wa.me/+242053373074" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+                        <a href="https://linkedin.com/in/nick-lemy" target="_blank"><img src="assets/linkedin.png" alt="linkedIn"></a>
+                        <a href="https://nicklemykayiranga@gmail.com" target="_blank"><img src="assets/vecteezy_google-mail-gmail-icon-logo-symbol_22484516.png"></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-
     <footer>
         <div class="footer-top">
-            <div class="quick-links">
-                <p>Home</p>
-                <p>About</p>
-                <p>Project</p>
-                <p>Contact</p>
-            </div>
+            <nav class="quick-links">
+                <p class="hamburger">☰</p>
+                <ul>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#projects">Skills-Certificates</a></li>
+                    <li><a href="#education-experience">Education-Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
             <div class="social-media-links">
                 <img src="assets/instagram.png" alt="insta" class="icon">
                 <img src="assets/twitter.png" alt="x" class="icon">

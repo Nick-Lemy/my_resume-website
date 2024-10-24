@@ -15,7 +15,6 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".nav-bar-right ul");
 var isDispled = false;
 
-
 // Function to handle the typing animation of titles
 function total() {
     let j = 0;
@@ -27,22 +26,22 @@ function total() {
             if (i < titles[j].length) {
                 span.innerHTML += titles[j].charAt(i);
                 i++;
-                setTimeout(typeTitle, 200); // Delay between each character
+                setTimeout(typeTitle, 200);
             } else {
                 setTimeout(() => {
                     span.innerHTML = "";
                     i = 0;
                     j++;
-                    setTimeout(typeTitle, 500); // Delay before typing the next title
-                }, 500); // Delay after finishing a title
+                    setTimeout(typeTitle, 500);
+                }, 500);
             }
         } else {
             j = 0;
-            setTimeout(typeTitle, 500); // Delay before restarting the animation
+            setTimeout(typeTitle, 500);
         }
     }
 
-    typeTitle(); // Start the typing animation
+    typeTitle();
 }
 
 // Start the typing animation when the DOM content is loaded
@@ -54,57 +53,57 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 // Function to initialize the slider
 function initializeSlider() {
     if (slides.length > 0) {
-        slides[index].classList.add("displaySlide"); // Display the first slide
+        slides[index].classList.add("displaySlide");
     }
 }
 
 // Function to show a specific slide based on the index
 function showSlide(indexs) {
     if (indexs >= slides.length) {
-        index = 0; // Loop back to the first slide
+        index = 0;
     } else if (indexs < 0) {
-        index = slides.length - 1; // Loop back to the last slide
+        index = slides.length - 1;
     }
 
     // Remove the display class from all slides
     slides.forEach(slide => {
         slide.classList.remove("displaySlide");
     });
-    slides[index].classList.add("displaySlide"); // Display the current slide
+    slides[index].classList.add("displaySlide");
 }
 
 // Function to show the previous slide
 function prevSlide() {
-    clearInterval(intervalId); // Clear the interval to stop automatic sliding
+    clearInterval(intervalId);
     index--;
-    showSlide(index); // Show the previous slide
+    showSlide(index);
 }
 
 // Function to show the next slide
 function nextSlide() {
     index++;
-    showSlide(index); // Show the next slide
+    showSlide(index);
 }
-
 
 // Function to handle hamburger menu
-
 function menuDisplayed() {
-    if(isDispled){
-        menu.style.display = "flex";
+    if (window.innerWidth <= 768) { // Check if the screen width is less than or equal to 768px
+        if (isDispled) {
+            menu.style.display = "flex"; // Display menu
+        } else {
+            menu.style.display = "none"; // Hide menu
+        }
     } else {
-        menu.style.display = "none";
+        menu.style.display = "flex"; // Always display the menu on larger screens
     }
-    if(hamburger.style.display == 'none'){
-        isDispled = true;
-    }
-    
 }
 
+// Toggle menu display on hamburger click
 hamburger.addEventListener("click", () => {
     isDispled = !isDispled;
     menuDisplayed();
 });
 
-
-document.addEventListener("DOMContentLoaded", menuDisplayed)
+// Ensure the menu is displayed correctly on page load and when resizing the window
+document.addEventListener("DOMContentLoaded", menuDisplayed);
+window.addEventListener("resize", menuDisplayed);
