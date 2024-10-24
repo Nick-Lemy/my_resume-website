@@ -5,7 +5,7 @@ let titles = [
     "Cybersecurity Enthousiast",
 ]
 
-// Variables for the slider
+// Variables for the slider, humburger menu and menu
 const span = document.getElementById("demo");
 const slides = document.querySelectorAll(".certificates-slider img");
 let index = 0;
@@ -97,6 +97,39 @@ function menuDisplayed() {
         menu.style.display = "flex"; // Always display the menu on larger screens
     }
 }
+
+// Function to validate the contact form
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+
+    if (name === "") {
+        alert('Please enter your name.');
+        return;
+    }
+
+    if (!emailIsValid(email) || email.length === "") {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    if (message === "") {
+        alert('Please enter a message.');
+        return;
+    }
+    // If validation passes, submit the form
+    form.submit();
+});
+
+function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 
 // Toggle menu display on hamburger click
 hamburger.addEventListener("click", () => {
