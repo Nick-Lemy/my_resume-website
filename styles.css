@@ -601,7 +601,7 @@ img.displaySlide {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     background-color:#011121;
     color: white;
 }
@@ -628,7 +628,8 @@ img.displaySlide {
     display: flex;
     margin-inline: auto;
     justify-content: center;
-    gap: 10rem;
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .education-experience-container img {
@@ -764,18 +765,9 @@ textarea {
     .certificates-title img, .skills-title img{
         display: none;
     }
-
-    .education-experience-container {
-        gap: 2rem;
-    }
 }
 
 @media screen and (max-width: 830px) {
-    .education-experience-container{
-        flex-direction: column;
-        margin-inline: auto;
-        align-items: center;
-    }
 
     .education {
         margin-bottom: 20px;
