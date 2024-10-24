@@ -267,7 +267,7 @@ main {
     margin-bottom: 70px;
 }
 
-.latest-projects h1 {
+.projects h1 {
     font-size: 50px;
     color: white;
     text-align: center;
@@ -326,10 +326,9 @@ main {
     color: white;
 }
 
-.latest-projects {
+.projects {
     display: flex;
     flex-direction: column;
-    padding: 5%;
     padding-bottom: 10%;
     background-color: orange;
 }
@@ -578,12 +577,12 @@ img.displaySlide {
 }
 
 .card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     padding: auto;
     max-width: 1500px;
-    margin-inline: auto;
+    flex-wrap: wrap;
 }
 
 .card-image {
@@ -759,7 +758,7 @@ textarea {
         padding: 0;
     }
 
-    .latest-projects h1 { 
+    .projects h1 { 
         font-size: 35px;
     }
 
