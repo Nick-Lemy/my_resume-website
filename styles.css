@@ -601,8 +601,6 @@ img.displaySlide {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-bottom: 5%;
     background-color:#011121;
     color: white;
@@ -629,6 +627,7 @@ img.displaySlide {
 .education-experience-container{
     display: flex;
     margin-inline: auto;
+    justify-content: center;
     gap: 10rem;
 }
 
@@ -666,11 +665,7 @@ img.displaySlide {
     color: white;
     flex-direction: column;
     gap: 1rem;
-    max-width: 500px;
-    margin: auto;
-    padding: 5%;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    padding: 7%;
     
 }
 
@@ -709,20 +704,18 @@ textarea {
 .contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color:#5372F0;
+    color:#fff;
+    justify-content: center;
+    margin-inline: auto;
 }
 
 .location-contact {
     display: flex;
     background-color:#011121;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1rem;
-    max-width: 500px;
-    margin: auto;
-    padding: 5%;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    padding: 8%;
 }
 
 .location-contact h2 {
