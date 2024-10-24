@@ -25,10 +25,10 @@ header {
     justify-content: space-between;
     background-color: #011121;
     color: white;
-    padding-top: 3%;
+    padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -59,7 +59,7 @@ header {
 .nav-bar-right ul a, .quick-links ul a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-bar-left img {
@@ -68,8 +68,11 @@ header {
 }
 
 .nav-bar-left p {
+    font-size: medium;
     margin-top: 3px;
-    font-weight: 500;
+    font-weight: 30;
+    color: white;
+    font-weight: 200;
 }
 
 .nav-bar-left {
@@ -100,7 +103,7 @@ header {
 .hero-left {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 7%;
     max-width: 600px;
     gap: 2rem;
     color: #5372F0;
@@ -114,7 +117,8 @@ span {
 .hero-left h1 {
     width: fit-content;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 1px;
 }
 
 .hero-left p {
@@ -127,6 +131,7 @@ span {
 .hero-left h3 {
     font-size: 25px;
     margin-top: 5%;
+    line-height: 0;
 }
 
 main {
@@ -261,16 +266,17 @@ main {
 }
 
 .skills-certificates h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: #5372F0;
     text-align: center;
     margin-bottom: 70px;
 }
 
 .projects h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
 
@@ -294,13 +300,13 @@ main {
 }
 
 .skills-title h2 {
-    font-size: 30px;
+    font-size: 20px;
 
     color: #5372F0;
 }
 
 .certificates-title h2 {
-    font-size: 30px;
+    font-size: 20px;
 
     color: orange;
 }
@@ -360,8 +366,6 @@ footer {
 .quick-links {
     display: flex;
     gap: 2rem;
-    font-size: 20px;
-
     padding: 3%;
 }
 
@@ -532,6 +536,11 @@ img.displaySlide {
     border-color: #5372F0;
 }
 
+
+.card-link{
+    max-width: 295px;
+}
+
 .card-list .card-link .card-image {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -551,8 +560,8 @@ img.displaySlide {
 }
 
 .card-list .card-link .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight:400;
     color: #000000;
 }
 
@@ -581,7 +590,6 @@ img.displaySlide {
     justify-content: center;
     gap: 2rem;
     padding: auto;
-    max-width: 1500px;
     flex-wrap: wrap;
 }
 
@@ -601,34 +609,39 @@ img.displaySlide {
 }
 
 .education-experience h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 70px;
 }
 
-.experience h2{
-    color: orange;
+.education-experience-container p {
+    font-size: 15px;
+    max-width: 300px;
+    text-align: left;
 }
 
-.education-experience-container p {
-    font-size: 20px;
-    max-width: 500px;
+.projects p{
+    font-size: 15px;
+    max-width: 300px;
+    text-align: left;
 }
 
 .education-experience-container{
     display: flex;
-    justify-content: space-between;
+    margin-inline: auto;
+    gap: 10rem;
 }
 
 .education-experience-container img {
-    width: auto;
+    width: 200px;
+    height: auto;
 }
 
 .education-experience-container h3 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color:darkblue;
-    text-align: center;
+    text-align: left;
 }
 
 .contact {
@@ -641,7 +654,7 @@ img.displaySlide {
 }
 
 .contact h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color:#011121;
@@ -714,6 +727,7 @@ textarea {
 
 .location-contact h2 {
     color: white;
+    font-size: 20px;
 }
 
 .links img {
@@ -757,10 +771,6 @@ textarea {
     .certificates-title img, .skills-title img{
         display: none;
     }
-    
-    body h2{
-        font-size: 30px;
-    }
 
     .education-experience-container {
         gap: 2rem;
@@ -774,15 +784,6 @@ textarea {
         align-items: center;
     }
 
-    .education-experience h1{
-        font-size: 35px;
-        padding: 0;
-    }
-
-    .projects h1 { 
-        font-size: 35px;
-    }
-
     .education {
         margin-bottom: 20px;
     }
@@ -790,14 +791,6 @@ textarea {
     .experience {
         align-items: center;
         text-align:justify;
-    }
-
-    .skills-certificates h1{
-        font-size: 35px;
-    }
-
-    .contact h1{
-        font-size: 40px;
     }
 
     .contact-container{
@@ -838,10 +831,6 @@ textarea {
     .hamburger {
         display: block;
         text-align: right;
-    }
-
-    .nav-bar-left p{
-        font-size: 20px;
     }
 
     .nav-bar-right ul{
